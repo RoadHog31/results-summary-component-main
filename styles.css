@@ -2,43 +2,80 @@
     box-sizing: border-box;
   }
 
-  .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+html {
+
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+
+.attribution { 
+    
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    
+    color: hsl(228, 45%, 44%); 
+}
   
-  /* Create two unequal columns that floats next to each other */
-  .column {
-    float: left;
-    width:50%;
-    padding: 10px;
-    /*height: 300px;  Should be removed. Only for demonstration */
-  }  
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+    table-layout: fixed;
+}
+    
+.column {
+display: table-cell; /* Make elements inside the container behave like table cells */
+width:2%;
+}
 
-  .continueBtn {
-
-    color:white;
-
-
-  }
-
-  .cardColor {
-
-    background-color: hsl(241, 81%, 54%);
-  }
-
-
-  /* Responsive layout - when the screen is less than 375px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* Responsive layout - when the screen is less than 375px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 375px) {
     .column {
+      display: block;
       width: 100%;
     }
+  }  
+  
+
+.item-center {    
+
+    text-align: center;
+
+}
+
+.item-left{
+
+    text-align:left;
+}
+
+.continueBtn {
+
+    color:white;
+}
+
+#grad {
+    
+    background-image: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   }
+
+.cardColor {
+
+    background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+    border-style: dotted;           border-color: red;
+}
+
+
+
+ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+  
+
+  
+
 
 
 
