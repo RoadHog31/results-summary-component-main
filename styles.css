@@ -34,7 +34,7 @@ width:2%;
       display: block;
       width: 100%;
     }
-  }  
+}  
   
 
 .item-center {    
@@ -46,23 +46,47 @@ width:2%;
 .item-left{
 
     text-align:left;
+    left:50%;
 }
 
 .continueBtn {
 
+  display: block;
   background-color: hsl(224, 30%, 27%);
   text-align:center;
+  width:100%;
   color:white;
   border: none;  
-  padding: 20px;
-  text-align: center;
+  padding: 10px;  
   text-decoration: none;
-  display: inline-block;
+  
   font-size: 16px;
   margin: 4px 2px;
+  cursor: pointer;
 }
 
-.button5 {border-radius: 20%;}
+.continueBtn:hover {
+  background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+}
+
+.btncontainer{
+
+  height: 50px;
+  position: relative;
+  /*border: 3px solid green;*/
+}
+
+.btnvertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button5 {border-radius: 10%;}
 
 .cardColor {
 

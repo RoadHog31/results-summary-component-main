@@ -2,7 +2,7 @@ function createMenuStructure(menuStructure) {
     let html = '<ul>';
     for (let i = 0; i < menuStructure.length; i++) {
       let item = menuStructure[i];
-      html += '<li>' + '<object data="' + item.icon + '" width="15" height="15"> </object>' + " " + item.category + '    ' + item.score + '/100';
+      html += '<li>' + '<object data="' + item.icon + '" width="15" height="15"> </object>' + " " + item.category + "   " + item.score + " " + '/100';
       
       html += '</li>';
     }
@@ -35,8 +35,7 @@ function createMenuStructure(menuStructure) {
   
   const html = createMenuStructure(menuStructure);
   /*console.log(html);
-  document.getElementById("result").innerText = html;*/
-  
+  document.getElementById("result").innerText = html;*/ 
 
 let frag = document.createRange().createContextualFragment(html);
 console.log(frag);
