@@ -20,6 +20,7 @@ html {
     display: table; /* Make the container element behave like a table */
     width: 100%; /* Set full-width to expand the whole page */
     table-layout: fixed;
+    border-radius: 150px;
 }
     
 .column {
@@ -52,30 +53,38 @@ width:2%;
     color:white;
 }
 
-#grad {
-    
-    
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-image: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    
-    
-  }
+
 
 .cardColor {
 
     background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-
     border-style: dotted;           border-color: red;
 }
 
-
+/*#grad {   
+    
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-image: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    
+}*/
 
 ul li{
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.center {
+  /*background: #FF7A59;*/
+  background-image: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
   
   
