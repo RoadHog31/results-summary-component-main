@@ -2,7 +2,7 @@ function createMenuStructure(menuStructure) {
     let html = '<ul>';
     for (let i = 0; i < menuStructure.length; i++) {
       let item = menuStructure[i];
-      html += '<li>' + '<object data="' + item.icon + '" width="30" height="30"> </object>' + item.category + ' ' + item.score + '/100';
+      html += '<li>' + '<object data="' + item.icon + '" width="15" height="15"> </object>' + " " + item.category + '    ' + item.score + '/100';
       
       html += '</li>';
     }
