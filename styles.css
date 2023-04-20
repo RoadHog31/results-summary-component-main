@@ -39,14 +39,6 @@ width:2%;
 text-align: center;
 }
 
-/* Responsive layout - when the screen is less than 375px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and (max-width: 375px) {
-    .column {
-      display: block;
-      width: 100%;
-    }
-}   
-
 .item-center {    
 
     text-align: center;
@@ -58,31 +50,17 @@ text-align: center;
     left:50%;
 }
 
-.continueBtn {
-
-  display: block;
-  background-color: hsl(224, 30%, 27%);
-  text-align:center;
-  width:100%;
-  color:white;
-  border: none;
-  padding: 10px;  
-  text-decoration: none;  
-  font-size: 16px;
-  margin: 0px 40px 20px 40px;
-  cursor: pointer;
-}
-
 .button {
   background-color: hsl(224, 30%, 27%);
   border: none;
-  width:100%;
+  width:auto;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin: 0px 40px 20px 40px;
 }
 
 .button:hover {
@@ -90,7 +68,7 @@ text-align: center;
   color: white;
 }
 
-.button5 {border-radius: 40%;}
+.button5 {border-radius: 40px;}
 
 .cardColor {
 
@@ -179,6 +157,24 @@ span {
   display: table-cell;
   vertical-align: middle;
 }
+
+/* Responsive layout - when the screen is less than 375px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 375px) {
+  .column {
+    display: block;
+    width: 100%;
+    
+  }
+  .mainbackground{
+
+    background-color: hsl(0, 0%, 100%);
+    box-shadow:none;
+    border-radius:0%;
+    margin:0px;
+
+
+  }
+}   
   
   
 
