@@ -1,15 +1,25 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 * {
     box-sizing: border-box;
   }
 
-html {
-
-    font-family: 'Hanken Grotesk', sans-serif;
-  }
-
 .attribution { 
     
-    font-size: 11px; text-align: center; 
+    font-size: 11px; text-align: center; margin:50px;
 }
 .attribution a { 
     
@@ -26,6 +36,7 @@ html {
 .column {
 display: table-cell; /* Make elements inside the container behave like table cells */
 width:2%;
+text-align: center;
 }
 
 /* Responsive layout - when the screen is less than 375px wide, make the two columns stack on top of each other instead of next to each other */
@@ -34,8 +45,7 @@ width:2%;
       display: block;
       width: 100%;
     }
-}  
-  
+}   
 
 .item-center {    
 
@@ -91,18 +101,55 @@ width:2%;
 .cardColor {
 
     background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-style: dotted;           
-    border-color: red;
+    /*border-style: dotted;           
+    border-color: red;*/
+    border-radius: 10%;
 }
 
-/*#grad {   
-    
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-image: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    
-}*/
+.mainbackground {
+
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 10px 10px 5px lightblue;
+  border-radius: 25px;
+
+}
+
+/* Selects the second li element in a list */
+li:nth-child(1) {
+  background: hsla(0, 100%, 67%, 0.3);
+  color: hsl(0, 100%, 67%);
+  margin: 20px 50px 20px 0px;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+}
+
+/* Selects the second li element in a list */
+li:nth-child(2) {
+  background: hsla(39, 100%, 56%, 0.3);
+  color: hsl(39, 100%, 56%);
+  margin: 20px 50px 20px 0px;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+}
+
+/* Selects the second li element in a list */
+li:nth-child(3) {
+  background: hsla(166, 100%, 37%, 0.3);
+  color: hsl(166, 100%, 37%);
+  margin: 20px 50px 20px 0px;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+}
+
+/* Selects the second li element in a list */
+li:nth-child(4) {
+  background: hsla(234, 85%, 45%, 0.3);
+  color: hsl(234, 85%, 45%);
+  margin: 20px 50px 0px 0px;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+}
+
 
 ul li{
     padding: 0;
@@ -110,15 +157,27 @@ ul li{
     list-style: none;
 }
 
+.textRight{
+
+  text-indent: 5px;
+}
+
 .center {
-  /*background: #FF7A59;*/
+  
   background-image: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  margin: 0 auto;  
   display: flex;
-  align-items: center;
-  text-align: center;
+  align-items:center;
+  text-align:center; 
+    
+}
+
+span {
+  display: table-cell;
+  vertical-align: middle;
 }
   
   
