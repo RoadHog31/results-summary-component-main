@@ -78,9 +78,9 @@ li:nth-child(2) {
 ```
 ### Continued development
 
-Mobile responsiveness needs more work. 
-Some of the finer details displaying the data needs resolving. 
-Continue button size could be changed. 
+-Mobile responsiveness needs more work. 
+-Some of the finer details displaying the data needs resolving. 
+-Continue button size could be changed. 
 
 ### Useful resources
 
@@ -90,6 +90,6 @@ Continue button size could be changed.
 ## Author
 
 - Website - [Stephen Pino](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/roadhog31)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/RoadHog31)
 
 
