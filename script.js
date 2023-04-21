@@ -1,4 +1,4 @@
-import data from '/data.json' assert { type: 'json' };
+//import data from '/data.json' assert { type: 'json' };
 
 document.addEventListener("DOMContentLoaded", () => {
     //console.log("Hello"); 
@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
  /*Fetch API mthod used to get JSON file data.  */
- let menuStructure = data;
+ //let menuStructure = data;
  
 /*fetch("data.json")
  .then(resp => resp.json())
  .then(data => menuStructure = data);*/ 
 
   
-  /*const menuStructure = [
+  const menuStructure = [
     {
       "category": "Reaction",
       "score": 80,
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "score": 72,
       "icon": "./assets/images/icon-visual.svg"
     }
-  ];*/
+  ];
   
   const html = createMenuStructure(menuStructure);
   /*console.log(html);
