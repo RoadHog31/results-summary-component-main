@@ -1,4 +1,9 @@
-function createMenuStructure(menuStructure) {
+import data from '/data.json' assert { type: 'json' };
+
+document.addEventListener("DOMContentLoaded", () => {
+    //console.log("Hello"); 
+  
+  function createMenuStructure(menuStructure) {
     let html = '<ul>';
     for (let i = 0; i < menuStructure.length; i++) {
       let item = menuStructure[i];
@@ -8,9 +13,17 @@ function createMenuStructure(menuStructure) {
     }
     html += '</ul>';
     return html;
-  }  
+  }
   
-  const menuStructure = [
+ /*Fetch API mthod used to get JSON file data.  */
+ let menuStructure = data;
+ 
+/*fetch("data.json")
+ .then(resp => resp.json())
+ .then(data => menuStructure = data);*/ 
+
+  
+  /*const menuStructure = [
     {
       "category": "Reaction",
       "score": 80,
@@ -31,7 +44,7 @@ function createMenuStructure(menuStructure) {
       "score": 72,
       "icon": "./assets/images/icon-visual.svg"
     }
-  ];
+  ];*/
   
   const html = createMenuStructure(menuStructure);
   /*console.log(html);
@@ -40,3 +53,5 @@ function createMenuStructure(menuStructure) {
 let frag = document.createRange().createContextualFragment(html);
 console.log(frag);
 document.getElementById("result").appendChild(frag);
+
+});

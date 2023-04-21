@@ -28,9 +28,10 @@ body {
   
 .col-container {
     display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
+    width: 100%;  /*Set full-width to expand the whole page */
     table-layout: fixed;
     border-radius: 150px;
+    width: max-content;
 }
     
 .column {
@@ -171,8 +172,17 @@ span {
     box-shadow:none;
     border-radius:0%;
     margin:0px;
+  }
 
-
+  .col-container {
+    display: table; /* Make the container element behave like a table */
+    width: auto;  /*Set full-width to expand the whole page */
+    table-layout: fixed;
+    border-radius: 150px;
+ 
+      width: max-content;
+  
+    
   }
 }   
   
